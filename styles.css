@@ -1,0 +1,134 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: burlywood;
+}
+h2 {
+  color: brown;
+}
+.container {
+  width: 90%;
+  max-width: 600px;
+  background: wheat;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.search-bar {
+  display: flex;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+.search-bar input {
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+}
+.search-bar button {
+  padding: 10px;
+  font-size: 16px;
+  color: brown;
+}
+.current-weather {
+  margin-bottom: 20px;
+}
+.weather-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.weather-info-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.weather-info-left,
+.weather-info-right {
+  text-align: left;
+}
+.weather-info-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.weather-icon img {
+  width: 100px;
+  height: 100px;
+}
+#city-name {
+  font-size: 60px;
+  margin-bottom: 0;
+}
+#temperature {
+  font-size: 50px;
+  margin-top: -20px;
+}
+#weather-icon {
+  font-size: 75px;
+}
+#condition {
+  margin-top: -20px;
+}
+.forecast {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+#description {
+  color: brown;
+}
+.forecast-box {
+  width: 75px;
+  height: 100px;
+  background-color: blanchedalmond;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 0px;
+}
+.forecast-box p {
+  font-size: 14px;
+  line-height: 1.2;
+  margin: 5px;
+}
+.forecast-icon img {
+  width: 50px;
+  height: 50px;
+}
+.forecast-box #weather-icon {
+  position: relative;
+  margin-top: -5px;
+  top: -19px;
+}
+.forecast-box #temp {
+  font-size: 12px;
+  margin-top: -8px;
+  line-height: 0.8;
+}
+.forecast-box #weather-icon img {
+  width: 50px;
+  height: 50px;
+}
+.footer {
+  margin-top: 20px;
+  text-align: center;
+}
+.container .footer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
