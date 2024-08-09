@@ -1,110 +1,68 @@
-!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather App</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="search-bar">
-        <input type="text" id="city-input" placeholder="Enter city" />
-        <button id="search-btn">Search</button>
-      </div>
-      <div class="current-weather">
-        <div class="weather-row">
-          <div class="weather-info-left">
-            <h1 id="city-name">Johannesburg</h1>
-          </div>
-          <div class="weather-info-right" id="weather-icon">
-            <img
-              src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png"
-              alt="Weather icon"
-            />
-          </div>
-        </div>
-        <div class="weather-row">
-          <div class="weather-info-right">
-            <h2 id="temperature">23℃</h2>
-            <p id="condition">Mostly sunny</p>
-          </div>
-          <div class="weather-info-left">
-            <div id="datetime">Thursday, <span id="description"><strong>14:30</strong></span></div>
-
-            <div id="humidity">Humidity:<span id="description"><strong>25%</strong></span> </div>
-
-            <div id="wind">Wind:<span  id="description"><strong>24km/h</strong></span> </div>
-          </div>
-        </div>
-      </div>
-        <div class="forecast-box">
-          <p>Fri</p>
-          <div id="weather-icon">
-            <img
-              src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png"
-              alt="Weather-icon"
-            />
-          <p id="temp"><strong>23°</strong>/7°</p>
-        </div>
-        </div>
-
-        <div class="forecast-box">
-          <p>Sat</p>
-          <div id="weather-icon">
-            <img
-              src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png"
-              alt="Weather-icon"
-            />
-          <p id="temp"><strong>24°</strong>/9°</p>
-        </div>
-        </div>
-
-        <div class="forecast-box">
-          <p>Sun</p>
-          <div id="weather-icon">
-            <img
-              src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png"
-              alt="Weather-icon"
-            />
-          <p id="temp"><strong>25°</strong>/7°</p>
-        </div>
-        </div>
-        <div class="forecast-box">
-          <p>Mon</p>
-          <div id="weather-icon">
-            <img
-              src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png"
-              alt="Weather-icon"
-            />
-          <p id="temp"><strong>22°</strong>/8°</p>
-        </div>
-        <div>
-         <div class="forecast">
-        <div class="forecast-box">
-          <p>Tue</p>
-          <div id="weather-icon">
-            <img
-              src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png"
-              alt="Weather-icon"
-            />
-            <p id="temp"><strong>22°</strong>/9°</p>
-          </div>
-        </div>   
-        </div>
-      <div class="footer">
-        <p>
-          This project was Coded by
-          <a href="https://github.com/katekan1">Katekani Shihundla</a> is
-          Open-Sourced on
-          <a href="https://github.com/katekan1/shecodes-plus-Final-project"
-            >Github</a
-          >
-          and hosted on
-          <a href="https://my-shecodes-vanilla.netlify.app/">Netlify</a>
-        </p>
-      </div>
-    </div>
-    <script src="script.js"></script>
-  </body>
-</html>
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="UTF-8" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+        <title>Weather App</title> 
+        <link rel="stylesheet" href="styles.css" /> 
+    </head> 
+    <body> 
+        <div class="container"> 
+            <div class="search-bar"> 
+                <input type="text" id="city-input" placeholder="Enter city" /> 
+                <button id="search-btn">Search</button> 
+            </div> 
+            <div class="current-weather"> 
+                <div class="weather-row"> 
+                    <div class="weather-info-left"> 
+                        <h1 id="city-name">Johannesburg</h1> 
+                    </div> 
+                    <div class="weather-info-right"> 
+                        <img id="weather-icon" src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png" alt="Weather icon" /> 
+                    </div> 
+                </div> 
+                <div class="weather-row"> 
+                    <div class="weather-info-left"> 
+                        <h2 id="temperature">18℃</h2> 
+                        <p id="condition">Clear with clouds</p> 
+                    </div> <div class="weather-info-right"> 
+                        <p id="datetime">Thursday, <span><strong>22:02</strong></span></p> 
+                        <p id="humidity">Humidity: <span><strong>29%</strong></span></p> 
+                        <p id="wind">Wind: <span><strong>13 km/h</strong></span></p> 
+                    </div> 
+                </div>
+            </div> 
+            <div class="forecast"> 
+                <div class="forecast-box"> 
+                    <p>Fri</p> 
+                    <img class="forecast-icon" src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png" alt="Weather icon" /> 
+                    <p class="forecast-temp"><strong>23°</strong>/7°</p> 
+                </div> 
+                <div class="forecast-box"> 
+                    <p>Sat</p> 
+                    <img class="forecast-icon" src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png" alt="Weather icon" /> 
+                    <p class="forecast-temp"><strong>24°</strong>/9°</p> 
+                </div> 
+                <div class="forecast-box"> 
+                    <p>Sun</p> 
+                    <img class="forecast-icon" src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png" alt="Weather icon" /> 
+                    <p class="forecast-temp"><strong>25°</strong>/7°</p> 
+                </div> 
+                <div class="forecast-box"> 
+                    <p>Mon</p> 
+                    <img class="forecast-icon" src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png" alt="Weather icon" /> 
+                    <p class="forecast-temp"><strong>22°</strong>/8°</p> 
+                </div> 
+                <div class="forecast-box"> 
+                    <p>Tue</p> 
+                    <img class="forecast-icon" src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png" alt="Weather icon" /> 
+                    <p class="forecast-temp"><strong>22°</strong>/9°</p> 
+                </div> 
+            </div> 
+            <div class="footer"> 
+                <p> This project was coded by <a href="https://github.com/katekan1">Katekani Shihundla</a>. It is open-sourced on <a href="https://github.com/katekan1/shecodes-plus-Final-project"> Github </a> and hosted on <a href="https://my-shecodes-vanilla.netlify.app/">Netlify</a>. </p> 
+            </div> 
+        </div> 
+        <script src="script.js"></script> 
+    </body> 
+    </html
